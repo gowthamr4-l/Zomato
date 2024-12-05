@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+
+        }
+        body{
+            font-family: Okra, Helvetica, sans-serif;
+        }
+        .img1{
+            position: relative;
+            width: 100%;
+            height:420px ;
+        }
+        .img1 img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+         }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    
+        .mob{
+            color: aliceblue;
+            cursor: pointer;
+        }
+        .phone{
+            color: aliceblue;
+            position: absolute;
+            font-size: 1.0rem;
+            display: flex;
+            max-width: 35rem;
+            left: 5%;
+            top: 5%;
+            
+        }
+        .top1{
+            position: absolute;
+            top: 5%;
+            left: 52%;
+            
+            
+        }
+        .top1>a{
+            font-size: 1.2rem;
+            padding: 0.9rem !important;
+            color: rgb(255, 255, 255);
+            font-weight: 10;
+        }
+       .top>p{
+            position: absolute;
+            font-size: 1.0rem;
+            display: flex;
+            color: rgb(255, 255, 255);
+            font-weight: 100;
+            top: 8%;
+            transform: translateY(-50%);
+            padding-bottom: 1rem;
+            left:6%;
+            
+        }
+        .mid{
+            text-align: center;
+        }
+        .mid>img
+        {
+            position: absolute;
+            top:20%;
+            left:38%
+             }
+        .mid>p{
+            position: absolute;
+            top: 36%;
+            left: 21%;
+            font-size: 1.0rem;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-weight: 100;
+            font-size: 2.4rem;
+            line-height: 1.2;
+            font-weight: 100;
+        }
+        .emp{
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            border-radius: 0.8rem;
+            top: 49%;
+            width: 752px;
+            border-radius: 6px;
+            height: 50px;
+            left: 19%;
+        }
+        .loc{
+            color: rgb(235, 88, 88);
+            font-size: 20px;
+        }
+        .continer>input{
+            border: none; 
+            padding-left: 3px;   
+            padding-bottom: 1%; 
+            width: 24%;   
+        }
+        .continer{
+            padding-top: 14px;
+            padding-left: 11px;
+        }
+        .down{
+            cursor: pointer;
+            color:  rgb(90, 81, 81);;
+
+            }
+        
+        .line{
+            position:absolute;
+            top: 34%;
+            left:32%;
+            width: 0rem;
+            height: 1.2rem;
+            border: 0.05rem solid rgb(207, 207, 207);
+            }
+        .inpu1>input{
+            position: absolute;
+            border: none;
+            top: 34%;
+            width: 250px;
+            left:39%;
+        }
+        .sear{
+            position: absolute;
+            top: 35%;
+            left: 34%;
+            color:  rgb(117, 114, 114);
+        }
+        
+        /*---------mid-1----------------*/
+        .mid1{
+            margin-top: 42px;
+        }
+        .im1{
+            object-fit: cover;
+            transform: none;
+            position: absolute;
+            left: 6%;
+            width: 350px;
+            height: 245px;
+            border-radius: 10px;
+        }
+        .im1>img{
+            width: 351px;
+            height: 160px;
+            display: flex;
+            object-fit: cover;
+            border-start-end-radius: 10px;
+            border-top-left-radius: 10px;
+            border-color:rgb(117, 114, 114) ;
+
+        }
+        #empt1{
+            width: 350px;
+            height: 85px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            border-radius: 0px 0px 1.2rem 1.2rem;
+            border-end-start-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .par1{
+            font-size: inherit;
+            
+            line-height: 1.5;
+            font-size: 1.4rem;
+            color: rgb(54, 54, 54);
+            padding-top: 16px;
+            padding-left:21px;
+        }
+        .par2{
+            font-size: inherit;
+            font-size: 1.0rem;
+            font-size: inherit;
+            line-height: 1.5;
+            color:rgb(105, 104, 104);;
+            padding-top: px;
+            padding-left:21px;
+        }
+        /*---------im-2----------------*/
+        .im2{
+            object-fit: cover;
+            transform: none;
+            position: absolute;
+            left: 36%;
+            width: 351px;
+            height: 245px;
+            border-radius: 10px;
+        }
+        .im2>img{
+            width: 351px;
+            height: 160px;
+            display: flex;
+            object-fit: cover;
+            border-start-end-radius: 10px;
+            border-top-left-radius: 20px;
+            border-color:rgb(117, 114, 114) ;
+
+        }
+        #empt2{
+            width: 350px;
+            height: 85px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            border-radius: 0px 0px 1.2rem 1.2rem;
+            border-end-start-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }      
+        /*---------im-3----------------*/
+        .im3{
+            object-fit: cover;
+            transform: none;
+            position: absolute;
+            left: 66%;
+            width: 350px;
+            height: 245px;
+            border-radius: 10px;
+        }
+        .im3>img{
+            width: 351px;
+            height: 160px;
+            display: flex;
+            object-fit: cover;
+            border-start-end-radius: 10px;
+            border-top-left-radius: 10px;
+            border-color:rgb(117, 114, 114) ;
+
+        }
+        #empt3{
+            width: 350px;
+            height: 85px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            border-radius: 0px 0px 1.2rem 1.2rem;
+            border-end-start-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        /*---------mid-2----------------*/
+        .mid2{
+            margin-top: 360px;
+            margin-left: 70px;
+        }
+        .part3{
+            font-size: 1.6rem;
+            line-height: 5.2;
+            font-weight: 0;
+            color: rgb(28, 28, 28);
+            margin: 0px;
+            font-size: 62.5%;
+            
+        }
+        .part3
+        {
+            font-size: 1.6rem;
+            font-family: Okra, Helvetica, sans-serif;
+            line-height: 1.0; 
+            color: rgb(28, 28, 28); 
+        }
+        .part4>p{
+            display: block;
+            font-size: inherit;
+            font-size: 1.0rem;
+            font-size: inherit;
+            line-height: 1.5;
+            color:rgb(54, 54, 54);
+            unicode-bidi: isolate;
+        }
+    .part4{
+            display: inline-flex;
+            justify-content: space-between;
+            padding-top: 0.3rem;
+            background-color: transparent;
+            cursor: pointer;
+            border: 0.1rem solid transparent;
+            border-radius: 0.4rem;
+            line-height: 1;
+            font-weight: 300;
+            } 
+        .sp{
+            display: flex;
+            justify-content: space-between;
+        }
+        .all{
+            padding-right: 80px;
+            padding-top: 0.3rem;
+            color: rgb(255,126,139); 
+        }
+        /*---------ming-part----------------*/
+        .imgpart{
+            margin-top: 20px;
+        }
+        .imgo{
+            position: relative;
+              }
+        .imgo>img{
+            width: 260px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-sizing: border-box; 
+        }
+        .imgo>p {
+            position: absolute;
+            top:74%;
+            left: 1%;
+            color: rgb(255, 255, 255);
+            font-size: 1.3rem;
+            line-height: 3.5;
+            font-weight: 300;
+            font-family: Okra, Helvetica, sans-serif;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .imgo>h6{
+            position: absolute;
+            top:87%;
+            left: 1%;
+            font-size: 0.8rem;
+            line-height: 3.5;
+            color: rgb(255, 255, 255);
+        }
+        .icon2{
+            position: absolute;
+            top:92%;
+            left: 7%;
+            color: rgb(255, 255, 255);
+        }
+        .imgt>img{
+            width: 260px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-sizing: border-box; 
+            position:absolute;
+            left: 28%;
+            top:857px;
+        }
+        .imgt>p {
+            position:absolute;
+            top:1081px;
+            left: 29%;
+            color: rgb(255, 255, 255);
+            font-size: 1.3rem;
+            line-height: 3.5;
+            font-weight: 300;
+            font-family: Okra, Helvetica, sans-serif;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .imgt>h6{
+            position: absolute;
+            top:1115px;
+            left:29%;
+            font-size: 0.8rem;
+            line-height: 4.5;
+            color: rgb(255, 255, 255);
+        }
+        .icon3{
+            position: absolute;
+            top:1136px;
+            left: 35%;
+            color: rgb(255, 255, 255);
+        }
+        .imgthr>img{
+            width: 260px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-sizing: border-box; 
+            position:absolute;
+            left: 634px;
+            top:857px;
+        }
+        .imgthr>p {
+            position:absolute;
+            top:1081px;
+            left: 650px;
+            color: rgb(255, 255, 255);
+            font-size: 1.3rem;
+            line-height: 3.5;
+            font-weight: 300;
+            font-family: Okra, Helvetica, sans-serif;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .imgthr>h6{
+            position: absolute;
+            top:1115px;
+            left: 650px;
+            font-size: 0.8rem;
+            line-height: 4.5;
+            color: rgb(255, 255, 255);
+        }
+        .icon4{
+            position: absolute;
+            top:1136px;
+            left: 725px;
+            color: rgb(255, 255, 255);
+        }
+        .imgfo>img{
+            width: 260px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-sizing: border-box; 
+            position:absolute;
+            left: 917px;
+            top:857px;
+        }
+        .imgfo>p {
+            position:absolute;
+            top:1081px;
+            left: 933px;
+            color: rgb(255, 255, 255);
+            font-size: 1.3rem;
+            line-height: 3.5;
+            font-weight: 300;
+            font-family: Okra, Helvetica, sans-serif;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .imgfo>h6{
+            position: absolute;
+            top:1115px;
+            left:933px;
+            font-size: 0.8rem;
+            line-height: 4.5;
+            color: rgb(255, 255, 255);
+        }
+        .icon5{
+            position: absolute;
+            top:1136px;
+            left:1005px;
+            color: rgb(255, 255, 255);
+        }
+        /*---------mid-part3----------------*/
+        .mid3{
+            margin-top: 138px;
+        }
+        .mid3>p{
+            margin: 0px;
+            color: rgb(54, 54, 54);
+            font-size: 2.0rem;
+            line-height: 1.2;
+        }
+        .box1{
+            margin-top: 40px;            
+            width: 350px;
+            height: 70px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 7px;
+        }
+        .sel2{
+            padding: 15px;
+            cursor: pointer;
+                }
+        .sel2>h5{
+            font-size: 1.4rem;
+            font-weight: 100;
+            color: rgb(28, 28, 28);
+        }
+        .sel2>p{
+            line-height: 2.0rem;
+            font-size: 1.0rem;
+            font-weight: 100;
+        }
+        .arrow{
+            padding-top: 30px;
+            padding-right:15px;
+            font-weight: 600px;
+            font-size: 0.7rem;
+
+        }
+        .box2{
+            margin-top: 40px;
+            position: absolute;
+            left: 450px;
+            width: 350px;
+            height: 70px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 7px;
+        }
+        .sle1{
+            padding: 15px;
+            cursor: pointer;
+                }
+        .sle1>h5{
+            font-size: 1.4rem;
+            font-weight: 100;
+            color: rgb(28, 28, 28);
+        }
+        .sle1>p{
+            line-height: 2.0rem;
+            font-size: 1.0rem;
+            font-weight: 100;
+        }
+        .arrow{
+            padding-top: 30px;
+            padding-right:15px;
+            font-weight: 600px;
+            font-size: 0.7rem;
+
+        }
+        .box3{
+            margin-top: 40px;
+            position: absolute;
+            left: 820px;
+            width: 350px;
+            height: 70px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 7px;
+        }
+        .box4{ 
+            position: absolute;
+            right: 750px;
+
+            bottom:0px;         
+            width: 350px;
+            height: 70px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 7px;
+        }
+        .box9{
+            margin-top: 20px;
+            position: absolute;
+            left: 820px;
+            width: 350px;
+            height: 70px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 7px;
+        }
+        .box5{
+            
+            position:absolute ;
+            right:370px;
+            bottom: 0px;
+            width: 350px;
+            height: 70px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 7px;
+        }
+        .box8{
+            margin-top: 90px;
+            position:absolute ;
+            left:0px;
+            width: 350px;
+            height: 70px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            display: flex;
+            
+            border-radius: 7px;
+        }
+        .box7{
+            margin-top: 90px;
+            position:absolute ;
+            right: 370px;
+            width: 350px;
+            height: 70px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 7px;
+        }
+        .box6{
+            margin-top: 0px;
+            position:absolute ;
+            right: 380px;
+            width: 350px;
+            height: 70px;
+            border-style: solid;
+            border: 1px solid rgb(232, 232, 232);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 7px;
+        }
+        .arrow3{
+            padding-top: 20px;
+            padding-right:15px;
+            font-weight: 600px;
+            font-size: 0.8rem;
+
+        }
+        /*------------------mid-4-----------*/
+        
+        .phone>img{
+            height: 400px;
+            width: 400px;
+            margin-top: 320px;
+            position: absolute;
+            right: 270px;
+            object-fit: cover;
+        }
+        .emailint>input{
+            border-radius: 100%;
+            width: 10%;
+            
+        }
+        .phonelint>input{
+            border-radius: 100%;
+            width: 10%;
+            cursor: pointer;
+            background-color:rgb(239,79,95);
+            border: 1.9rem rgb(232, 232, 232);;
+            
+        }
+        .zomat1{
+            width: 440px;
+            position: absolute;
+            right: 110px;
+            top:330px ;
+        }
+        .zomat1>h2{
+            font-size: 2.9rem;
+            font-weight: 100;
+        }
+        .zomat1>p{
+            padding-top: 10px;
+            line-height: 2.0rem;
+            font-weight: 100;
+        }
+        .emailint{
+            position: absolute;
+            top: 480px;
+            right: 450px;
+            width: 100px;
+        }
+        .phonelint{
+            position: absolute;
+            top: 480px;
+            right: 300px;
+            width: 100px;
+        }
+        .empty3{
+            background-color: rgb(255, 255, 255);
+            width: 270px;
+            height: 50px;
+            position: absolute;
+            top: 1989px;
+            left: 620px;
+            border-radius: 5%;
+            border: 1px solid rgb(232, 232, 232);
+        }
+        .empty3>p{
+            padding-top: 15px;
+            padding-left: 20px;
+
+
+        }
+        .down1{
+            position: absolute;
+            left: 52px;
+            top: 17px;
+            font-size: 0.8rem;
+            
+        }
+        .line2{
+            position: absolute;
+            top: 15px;
+            left: 75px;
+            width: 0rem;
+            height: 1.2rem;
+            border: 0.05rem solid rgb(207, 207, 207);
+        }
+        .empty3>input{
+            position: absolute;
+            top: 15px;
+            left:85px;
+            border: none;
+            
+        }
+        .mid_4-5>button{
+            position: absolute;
+            color: aliceblue;
+            top: 1989px;
+            left:920px;
+            width: 150px;
+            height: 50px;
+            background-color: rgb(239,79,95);
+            border-radius: 5px;
+            border: none;
+        }
+        .mid_4-5>p{
+            position: absolute;
+            top:2070px;
+            left:620px;
+            width:300px;
+            color:rgb(207,207,207);
+            font-weight: 100;
+        }
+        .imgpart20{
+            position: absolute;
+            top: 2105px;
+            left:400px;
+            width: 10px;
+        }
+        .google-play{
+            position: absolute;
+            left: 220px;
+        }
+        .google-play>img{
+            height: 40px;
+        }
+        .mac>img{
+            height: 40px;
+        }
+        .mac{
+            position: absolute;
+            left: 380px;
+            object-fit: cover;
+            height: px;
+        }
+        .mid5{
+            margin-left: 70px;
+            margin-top: 880px;
+        }
+        .title2{
+            position: absolute;
+            top: 2270px;
+            font-size: 1.8rem;
+            font-weight: 100;
+    
+        }
+        .empty4{
+            width: 1100px;
+            height: 65px;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            border: 0.05rem solid rgb(207, 207, 207);
+        }
+        .empty4>p{
+            padding: 25px;
+            position:absolute ;
+            font-size: 1.2rem;
+            font-weight: 100;
+            
+        }
+
+        .down7{
+            position: absolute;
+            margin-top: 25px;
+            left: 1120px;           
+        }
+        .empty5{
+            width: 1100px;
+            margin-top: 25px;
+            height: 65px;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            border: 0.05rem solid rgb(207, 207, 207);
+        }
+        .empty5>p{
+            padding: 25px;
+            position:absolute ;
+            font-size: 1.2rem;
+            font-weight: 100;
+            
+        }
+
+        .down7{
+            position: absolute;
+            margin-top: 25px;
+            left: 1120px;           
+        }
+        .about{
+            margin-top: 50px;
+            background-color:rgb(248,248,248);
+        }
+        .zoimg>img{
+            margin-left: 70px;
+            margin-top: 50px;
+            object-fit: cover;
+            width: 150px;
+        }
+        .india{
+            border: solid;
+            width: 110px;
+            height: 30px;
+            border-radius: 5px;
+            position: absolute;
+            left: 920px;
+            top:2770px
+
+        }
+        .india>img{
+            width: 30px;
+            height: 20px;
+            object-fit: cover;
+            position: absolute;
+            padding-top: 5px;
+            padding-left: 5px;
+            
+        }
+        .india>p{
+            position: absolute;
+            left: 40px;
+            padding-top: 5px;
+        }
+        .india>i{
+            padding-left: 90px;
+            position: absolute;
+            padding-top: 6px;
+        
+            
+        }
+        .earth{
+            border: solid;
+            width: 118px;
+            height: 30px;
+            border-radius: 5px;
+            position: absolute;
+            left: 1050px;
+            top:2770px
+
+        }
+        .earth>img{
+            width: 30px;
+            height: px;
+            object-fit: cover;
+            font-weight: 400;
+            position: absolute;
+            padding-top: px;
+            padding-left: 5px;
+        }
+        .earth>p{
+            position: absolute;
+            left: 40px;
+            padding-top: 5px;
+        }
+        .earth>i{
+            padding-left: 98px;
+            position: absolute;
+            padding-top: 6px;
+        }
+        .paragraph1{
+            margin-left: 70px;
+            padding-top: 30px;
+        }
+        .paragraph1>h3{
+            font-size: 0.97rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .paragraph1>p{
+            padding-top: 10px;
+            line-height: 1.6rem;
+            color: rgb(117, 114, 114);
+            font-weight: 100;
+        }
+        .paragraph2{
+            position: absolute;
+            left: 310px;
+            top:2835px
+        }
+        .paragraph2>h3{
+            font-size: 0.97rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .paragraph2>p{
+            padding-top: 10px;
+            line-height: 1.6rem;
+            color: rgb(117, 114, 114);
+            font-weight: 100;
+        }
+        .paragraph3{
+            position: absolute;
+            left: 510px;
+            top:2835px
+        }
+        .paragraph3>h3{
+            font-size: 0.97rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .paragraph3>p{
+            padding-top: 10px;
+            line-height: 1.6rem;
+            color: rgb(117, 114, 114);
+            font-weight: 100;
+        }
+        .paragraph4{
+            position: absolute;
+            left: 795px;
+            top:2835px
+        }
+        .paragraph4>h3{
+            font-size: 0.97rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .paragraph4>p{
+            padding-top: 10px;
+            color: rgb(117, 114, 114);
+            font-weight: 100;
+            line-height: 1.6rem;
+        }
+        .paragraph5{
+            position: absolute;
+            left: 995px;
+            top:2835px
+        }
+        .paragraph5>h3{
+            font-size: 0.97rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .paragraph5>i{
+            border: solid;
+            padding: 3px;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            
+            
+            
+        }
+        .img11{
+            width: 20px;
+            margin-top: 25px;
+        }
+        .img11>img{
+            width: 150px;
+            object-fit: cover;
+        }
+        .icon-about{
+            padding-top: 10px;
+            letter-spacing: 0.4rem;
+        }
+        .twit{
+            width: 22px;
+        }
+        .lineend{
+            margin-top: 50px;
+            border: 0.05rem solid rgb(207, 207, 207);
+            width: 100%;
+            height: 0.0rem;
+            margin-left: 70px;
+            
+        }
+        .copy{
+            margin-top: 50px;
+            margin-left: 70px;
+            font-weight: 100;
+            font-size: 0.93rem;
+            color: rgb(117, 114, 114);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="head">
+        <div class="img1">
+            <img src="81f3ff974d82520780078ba1cfbd453a1583259680.avif">
+        </div>
+    <div class="top">
+        <i class="fa-light fa-mobile-screen-button phone"></i>
+        <p class="mob">Get the App</p>
+    <div class="top1">
+        <a href="#">Investor Relations &nbsp</a>
+        <a href="#">Add restaurant &nbsp </a>
+        <a href="#">Log in &nbsp </a>
+        <a href="#">Sing up</a>
+    </div>
+    </div>
+    <div class="mid">
+        <img style="width: 299px;" src="8313a97515fcb0447d2d77c276532a511583262271.avif">
+        <p>Discover the best food & drinks in Chennai</p>
+    </div>
+    <div class="end">
+        <div class="emp">
+            <div class="continer">
+            <i class="fa-solid fa-location-dot loc"></i>
+            <input placeholder="Chennai">
+            <i class="fa-solid fa-caret-down down"></i>
+        </div>
+    <div class="line">
+    </div>
+    <div class="inpu1">
+        <i class="fa-solid fa-magnifying-glass sear"></i>
+        <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+    </div>
+        
+    </div> </div>
+</div>
+           <!---------mid-1---------------->
+<div class="mid1">
+    <div class="im1">
+    <img src="e5b8785c257af2a7f354f1addaf37e4e1647364814.avif" alt="">
+    <div id="empt1">
+        <p class="par1">Order Online</p>
+        <p class="par2">Stay home and order to your doorstep</p>
+    </div>
+    </div>
+    <div class="im2">
+        <img src="d026b357feb0d63c997549f6398da8cc1647364915.avif" alt="">
+        <div id="empt2">
+            <p class="par1">Dining</p>
+            <p class="par2">View the city's favourite dining venuse</p>
+        </div>
+    </div>
+    <div class="im3">
+    <img src="371de657644f1b5818fcb5d83387c8c91722851940.jpeg" alt="">
+    <div id="empt3">
+        <p class="par1">Live Events</p>
+        <p class="par2">Discover Indian's best events & concerts</p>
+    </div>
+    </div>
+</div>
+     <!---------mid-2---------------->
+     <div class="mid2">
+        <h2 class="part3">Collections</h2>
+        <div class="sp">
+        <div class="part4">
+        <p >Explore curated lists of top restaurants, cafes, pubs, and bars in Chennai, based on trends</p>
+        </div>
+        <div class="all"> <span>All collections in Chennai
+            <i class="sc-rbbb40-1 iFnyeo sc-vgtHo foXOpW" color="#FF7E8B" size="12">
+            <svg xmls="http://www.w3.org/2000/svg" fill="#FF7E8B" width="12" height="12" viewBox="0 0 20 20" >
+            <path d="M5 0.42l10 10-10 10v-20z"></path></svg>
+            </i>
+            </span></div>
+    </div>
+    <div class="imgpart">
+        <div class="imgo">
+    <img alt="Newly Opened Places" src="6922d49fb675d0490edb652abf5ca45f_1727171283.jpg" >
+        <p>Newly Opened Places</p>
+        <h6>20 Places</h6>
+        <i class="fa-solid fa-caret-right icon2"></i>
+    </div>
+    <div class="imgt">
+        <img alt="Top place" src="684397cd092de6a98862220e8cc40aca_1724236410.avif" >
+            <p>Top Trending Spots</p>
+            <h6>34 Places</h6>
+            <i class="fa-solid fa-caret-right icon3"></i>
+        </div>
+        <div class="imgthr">
+            <img alt="Top place" src="77e2cbe20d31bba315c97289977524f7_1724661777.avif" >
+                <p>South Indian Special</p>
+                <h6>39 Places</h6>
+                <i class="fa-solid fa-caret-right icon4"></i>
+            </div>
+            <div class="imgfo">
+                <img alt="Top place" src="2748683d9ae0c00e80ba4701e2545f66_1709815454.avif" >
+                    <p>Sea View Dining</p>
+                    <h6>15 Places</h6>
+                    <i class="fa-solid fa-caret-right icon5"></i>
+                </div></div>
+                
+        <!---------mid-3---------------->
+
+    <div class="mid3">
+        <p class="par">Popular localities in and around <span><b>Chennai</b></span></p>
+        <div class="box3">
+            <div class="sel2">
+            <h5>Velachery</h5>
+            <p>533 places</p>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="sel2">
+            <h5>Nungambakkam</h5>
+            <p>333 places</p>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="sle1">
+            <h5>T.Nagar</h5>
+            <p>385 places</p>
+            </div>
+            <div class="arrow">
+            <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="box9">
+            <div class="sle1">
+            <h5>Thuraipakkam</h5>
+            <p>278 places</p>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="box5">
+                <div class="sle1">
+                <h5>Anna Nagar East</h5>
+                <p>390 places</p>
+                </div>
+                <div class="arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        <div class="box4">
+            <div class="sle1">
+        <h5>Adyar</h5>
+        <p>232 places</p>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+    </div>
+    <div class="box8">
+        <div class="sle1">
+        <h5>see more</h5>
+        </div>
+        <div class="arrow3">
+            <i class="fa-solid fa-angle-down"></i></i>
+        </div>
+        </div>
+        <div class="box7">
+            <div class="sle1">
+            <h5>Alwarpet</h5>
+            <p>152 places</p>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        <div class="box6">
+            <div class="sle1">
+            <h5>Mylapore</h5>
+            <p>183 places</p>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        </div>
+        
+        <!---------mid-4---------------->
+        <div class="mid4">
+            <div class="phone">
+                <img src="ce5bc038a8a2d4f8f24465c8826182af1726501431.avif">
+            </div>
+            <div class="zomat1">
+                <h2>Get the Zomato app</h2>
+                <p>We will send you a link, open it on your phone to download the app</p>
+            </div>
+            <div class="emailint">
+                <input type="checkbox = checkbox" >
+                <label>Email</label>
+            </div>
+            <div class="phonelint">
+                <input type="checkbox = checkbox" >
+                <label>Phone</label>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+        <div class="mid_4-5">
+        <div class="empty3">
+            <p>+19</p>
+            <i class="fa-solid fa-chevron-down down1"></i>
+            <div class="line2"></div>
+            <input type="text" placeholder="type here...">
+        </div>
+            <button>Share App Link</button>
+            <p>Dowload app from</p>
+            <div class="imgpart20">
+                <div class="google-play">
+                <img src="23e930757c3df49840c482a8638bf5c31556001144.webp">
+            </div>
+                <div class="mac">
+                    <img src="9f0c85a5e33adb783fa0aef667075f9e1556003622.webp" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        <!---------mid-4---------------->
+<div class="mid5">
+    <div class="title2">
+        <p style="font-weight: 100;">Explore options near me</p>
+    </div>
+    <div class="empty4">
+        <p>Popular Cuisines Near Me</p>
+        <i class="fa-solid fa-chevron-down down7"></i>
+    </div>
+    <div class="empty5">
+        <p>Popular Restaurant Near Me</p>
+        <i class="fa-solid fa-chevron-down down7"></i>
+    </div>
+    <div class="empty5">
+        <p>Top Restaurant Near Me</p>
+        <i class="fa-solid fa-chevron-down down7"></i>
+    </div>
+    <div class="empty5">
+        <p>Cities We Deliver To</p>
+        <i class="fa-solid fa-chevron-down down7"></i>
+    </div>
+</div>
+<div class="about">
+    <div class="zoimg">
+        <img src="b40b97e677bc7b2ca77c58c61db266fe1603954218.avif" alt="">
+    </div>
+    <div class="india">
+        <img src="flag.png" alt="">
+        <p>India</p>
+        <i class="fa-solid fa-chevron-down down8"></i>
+    </div>
+    <div class="earth">
+        <img src="—Pngtree—vector globe icon_3787753.png" alt="">
+        <p>English</p>
+        <i class="fa-solid fa-chevron-down down9"></i>
+    </div>
+    <div class="paragraph1">
+        <h3>About Zomato</h3>
+        <p>Who WE Are</p>
+        <p>Blog</p>
+        <p>Work With Us</p>
+        <p>Inverstor Relations</p>
+        <p>Report Fraud</p>
+        <p>Press Kit</p>
+        <p>Contact Us</p>
+    </div>
+    <div class="paragraph2">
+        <h3>Zomaverse</h3>
+        <p>Zomato</p>
+        <p>Blinkit</p>
+        <p>Feeding india</p>
+        <p>Hyperpure</p>
+        <p>Zomato Live</p>
+        <p>Zomaland</p>
+        <p>Weather Union</p>
+    </div>
+    <div class="paragraph3">
+        <h3>For Restaurants</h3>
+        <p>Parent With Us</p>
+        <p>App For You</p>
+    </div>
+    <div class="paragraph4">
+        <h3>Learn More</h3>
+        <p>Privacy</p>
+        <P>Security</P>
+        <p>Terms</p>
+    </div>
+    <div class="paragraph5">
+        <h3>Social links</h3>
+        <div class="icon-about">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="linkedin"><path d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM7.0625 8.375H4.75V15.4375H7.0625V8.375ZM7.25 6.1875C7.25 5.5 6.75 5 5.9375 5C5.125 5 4.5625 5.5 4.5625 6.1875C4.5625 6.875 5.0625 7.4375 5.875 7.4375C6.6875 7.4375 7.25 6.875 7.25 6.1875ZM15.5 11.375C15.5 9.1875 14.3125 8.1875 12.8125 8.1875C11.5625 8.1875 11 8.875 10.6875 9.375V8.375H8.375C8.375 9.0625 8.375 15.4375 8.375 15.4375H10.6875V11.5C10.6875 11.3125 10.6875 11.0625 10.75 10.9375C10.9375 10.5 11.3125 10.0625 11.9375 10.0625C12.75 10.0625 13.125 10.6875 13.125 11.6875V15.4375H15.4375C15.5 15.4375 15.5 11.375 15.5 11.375Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="instagram"><path d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM10.1875 5C8.8125 5 8.625 5 8.0625 5C7.5 5.0625 7.125 5.125 6.8125 5.25C6.5 5.375 6.1875 5.5625 5.875 5.875C5.5625 6.1875 5.375 6.4375 5.25 6.8125C5.125 7.125 5 7.5 5 8.0625C5 8.625 5 8.75 5 10.1875C5 11.625 5 11.8125 5.0625 12.375C5.0625 12.9375 5.1875 13.3125 5.3125 13.625C5.4375 13.9375 5.625 14.25 5.9375 14.5625C6.1875 14.8125 6.5 15 6.875 15.1875C7.1875 15.3125 7.5625 15.4375 8.125 15.4375C8.6875 15.4375 8.875 15.5 10.25 15.5C11.6875 15.5 11.875 15.5 12.4375 15.4375C13 15.375 13.375 15.3125 13.6875 15.1875C14 15.0625 14.3125 14.875 14.625 14.5625C14.9375 14.25 15.125 14 15.25 13.625C15.375 13.3125 15.5 12.875 15.5 12.375C15.5625 11.8125 15.5625 11.625 15.5625 10.1875C15.5625 8.75 15.5625 8.625 15.5 8.0625C15.5 7.5 15.375 7.125 15.25 6.8125C15.125 6.4375 14.9375 6.1875 14.625 5.875C14.375 5.625 14.0625 5.4375 13.6875 5.25C13.375 5.125 12.9375 5.0625 12.4375 5C11.8125 5 11.625 5 10.1875 5ZM9.75 5.9375C9.875 5.9375 10.0625 5.9375 10.1875 5.9375C11.5625 5.9375 11.75 5.9375 12.3125 5.9375C12.8125 5.9375 13.0625 6.0625 13.25 6.125C13.5 6.25 13.6875 6.375 13.875 6.5C14.0625 6.625 14.1875 6.8125 14.25 7.125C14.3125 7.3125 14.4375 7.5625 14.4375 8.0625C14.5 8.625 14.5 8.8125 14.5 10.1875C14.5 11.5625 14.5 11.75 14.4375 12.3125C14.4375 12.8125 14.3125 13.125 14.25 13.3125C14.1875 13.5625 14.0625 13.6875 13.875 13.9375C13.6875 14.125 13.5 14.1875 13.25 14.3125C13.0625 14.375 12.8125 14.5 12.3125 14.5C11.75 14.5 11.5625 14.5625 10.1875 14.5625C8.8125 14.5625 8.625 14.5625 8.0625 14.5C7.5625 14.5 7.3125 14.375 7.125 14.3125C6.875 14.1875 6.6875 14.125 6.5 13.9375C6.3125 13.75 6.1875 13.5625 6.125 13.3125C6.0625 13.125 6 12.875 5.9375 12.3125C5.9375 11.75 5.9375 11.625 5.9375 10.1875C5.9375 8.8125 5.9375 8.625 5.9375 8.0625C6 7.5625 6.0625 7.3125 6.125 7.125C6.25 6.875 6.375 6.6875 6.5 6.5C6.625 6.3125 6.875 6.1875 7.125 6.125C7.3125 6.0625 7.5625 5.9375 8.0625 5.9375C8.5625 5.9375 8.75 5.9375 9.75 5.9375ZM13 6.8125C12.6875 6.8125 12.375 7.0625 12.375 7.4375C12.375 7.8125 12.625 8.0625 13 8.0625C13.375 8.0625 13.625 7.8125 13.625 7.4375C13.625 7.0625 13.3125 6.8125 13 6.8125ZM10.1875 7.5C8.75 7.5 7.5 8.6875 7.5 10.1875C7.5 11.6875 8.6875 12.875 10.1875 12.875C11.6875 12.875 12.875 11.6875 12.875 10.1875C12.875 8.6875 11.6875 7.5 10.1875 7.5ZM10.1875 8.4375C11.125 8.4375 11.9375 9.1875 11.9375 10.1875C11.9375 11.1875 11.1875 11.9375 10.1875 11.9375C9.25 11.9375 8.4375 11.1875 8.4375 10.1875C8.4375 9.1875 9.25 8.4375 10.1875 8.4375Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" class="twit" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><path d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z"></path><path fill="#fff" fill-rule="nonzero" d="M318.64 157.549h33.401l-72.973 83.407 85.85 113.495h-67.222l-52.647-68.836-60.242 68.836h-33.423l78.052-89.212-82.354-107.69h68.924l47.59 62.917 55.044-62.917zm-11.724 176.908h18.51L205.95 176.493h-19.86l120.826 157.964z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="youtbe"><path d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM15.1875 7.4375C15.0625 7 14.6875 6.625 14.25 6.5C13.4375 6.25 10.1875 6.25 10.1875 6.25C10.1875 6.25 6.9375 6.25 6.125 6.5C5.6875 6.625 5.3125 7 5.1875 7.4375C5 8.25 5 10 5 10C5 10 5 11.75 5.25 12.5625C5.375 13 5.75 13.375 6.1875 13.5C7 13.75 10.25 13.75 10.25 13.75C10.25 13.75 13.5 13.75 14.3125 13.5C14.75 13.375 15.125 13 15.25 12.5625C15.5 11.75 15.5 10 15.5 10C15.5 10 15.4375 8.25 15.1875 7.4375ZM9.25 11.75V8.5L11.875 10.125L9.25 11.75Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="facebook"><path d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM10.75 15.4375V10.1875H12.1875L12.375 8.375H10.75V7.5C10.75 7.0625 10.8125 6.8125 11.5 6.8125H12.375V5H10.9375C9.1875 5 8.625 5.875 8.625 7.3125V8.375H7.5V10.1875H8.5625V15.4375C8.5625 15.4375 10.75 15.4375 10.75 15.4375Z"></path></svg>
+        </div>
+        <div class="img11">
+            <img src="9f0c85a5e33adb783fa0aef667075f9e1556003622.webp" alt="">
+            <img src="23e930757c3df49840c482a8638bf5c31556001144.webp" alt="">
+        </div>
+    </div>
+        <div class="lineend">
+
+        </div>
+  <div class="copy">
+    <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.</p>
+  </div>
+
+
+</div>
+</body>
+</html>
